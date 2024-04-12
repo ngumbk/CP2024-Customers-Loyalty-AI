@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'cp2024_customers_loyalty.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': conf.pg_database,
+        'USER': conf.pg_user,
+        'PASSWORD': conf.pg_password,
+        'HOST': conf.pg_host,
+        'PORT': conf.pg_port,
     }
 }
 
