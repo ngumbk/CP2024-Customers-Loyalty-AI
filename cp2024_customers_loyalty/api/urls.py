@@ -1,5 +1,7 @@
 from django.urls import path
 
-from . import views
+from .views import CustomerQuartalFigureAPIView
 
-urlpatterns = []
+urlpatterns = [
+    path('CustomerQuartalFigure', CustomerQuartalFigureAPIView.as_view(), name='CustomerQuartalFigure'),
+]
