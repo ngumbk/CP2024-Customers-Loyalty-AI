@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'customers_loyalty_app.apps.CustomersLoyaltyAppConfig',
+    'api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
